@@ -1084,6 +1084,18 @@ public class CypherQuery
 
         return new Value( new FunctionExpression( "count", expression ) );
     }
+    
+    /**
+     * Declare a size(expression) RETURN expression
+     *
+     * @return
+     */
+    public static NumericExpression size( Expression expression )
+    {
+    	checkNull( expression, "Expression" );
+    	
+    	return new Value( new FunctionExpression( "size", expression ) );
+    }
 
     /**
      * Declare a * RETURN expression
