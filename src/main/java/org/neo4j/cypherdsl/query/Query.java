@@ -37,8 +37,8 @@ public class Query
         implements AsString, Serializable, Cloneable
 {
     
-    private static final String QUERY_PREFIX = "CYPHER ";
-    private static final String DEFAULT_CYPHER_VERSION = "3.2";
+    private static final String QUERY_PREFIX = "";
+    private static final String DEFAULT_CYPHER_VERSION = "";
     
     public static boolean isEmpty( String string )
     {
